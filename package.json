@@ -1,0 +1,12 @@
+{
+  "name": "interval-events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test/index.js"
+  },
+  "keywords": ["event","timeout","interval","chat"],
+  "author": "Axel Wine Studios",
+  "license": "ISC"
+}
