@@ -11,6 +11,8 @@ event.addAction(5, () => {
 
 event.addAction(10, () => {
     console.log("Acción dentro de 20 segundos");
+
+    event.stop();
 });
 
 event.start();
