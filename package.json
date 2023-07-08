@@ -1,12 +1,24 @@
 {
   "name": "interval-events",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple way to execute events at specific time intervals",
   "main": "index.js",
   "scripts": {
     "test": "test/index.js"
   },
-  "keywords": ["event","timeout","interval","chat"],
+  "keywords": [
+    "event",
+    "timeout",
+    "interval",
+    "chat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AxelWine/interval-events.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AxelWine/interval-events/issues"
+  },
   "author": "Axel Wine Studios",
   "license": "ISC"
 }
