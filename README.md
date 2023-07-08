@@ -105,4 +105,4 @@ event.start();
 In this example, an instance of IntervalEvent is created and three actions are added. Then, the event sequence is started, and the corresponding messages will be printed at the specified time intervals.
 
 ## License
-This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/AxelWine/interval-events/blob/main/README.md).
+This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/AxelWine/interval-events/blob/main/LICENSE.md).
