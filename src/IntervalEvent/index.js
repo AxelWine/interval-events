@@ -23,7 +23,6 @@ class IntervalEvent {
         const runEvents = () => {
             let event = this._findEvent(this._index);
             if( event ) event.callback();
-            console.log(this._index);
             this._index++;
         };
 
