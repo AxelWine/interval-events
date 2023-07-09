@@ -1,6 +1,6 @@
 {
   "name": "interval-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple way to execute events at specific time intervals",
   "main": "index.js",
   "scripts": {

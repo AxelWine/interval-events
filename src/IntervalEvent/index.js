@@ -19,7 +19,10 @@ class IntervalEvent {
         this._latestIndex += interval;
     };
 
-    start() {
+    start(startAt) {
+        if( this._running ) return;
+        if( startAt ) this._index = startAt;
+        
         const runEvents = () => {
             let event = this._findEvent(this._index);
             if( event ) event.callback();
