@@ -39,11 +39,11 @@ event.addAction(10, () => {
 In this example, three actions have been added. The first one will be executed after 5 seconds from the start, the second one after 10 seconds (5 seconds after the first action), and the third one after 20 seconds from the start (10 seconds after the second action).
 
 ## Starting and stopping the event sequence
-To start the event sequence, use the `start()` method:
+To start the event sequence, use the `start(startAt)` method:
 ```js
 event.start();
 ```
-This will initiate the execution of the actions at the specified time intervals.
+This will initiate the execution of the actions at the specified time intervals, if you indicate a number in startAt, the sequence of events will `start` from that second, otherwise it will start from the beginning.
 
 If you want to stop the event sequence at any time, you can call the `stop()` method:
 
