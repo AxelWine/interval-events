@@ -1,61 +1,61 @@
 class IntervalEvent {
-    constructor() {
-        this._events = [];
-        this._interval = null;
-        this._running = false;
-        this._index = 0;
-        this._latestIndex = 0;
+  constructor() {
+    this._events = [];
+    this._interval = null;
+    this._running = false;
+    this._index = 0;
+    this._latestIndex = 0;
+  };
+
+  _findEvent(index) {
+    return this._events.find((event) => event.interval === index);
+  };
+
+  addAction(interval, callback) {
+    this._events.push({
+      interval: this._latestIndex + interval,
+      callback
+    });
+    this._latestIndex += interval;
+  };
+
+  start(startAt) {
+    if (this._running) return;
+    if (startAt) this._index = startAt;
+    
+    const runEvents = () => {
+        let event = this._findEvent(this._index);
+        if (event) event.callback();
+        this._index++;
     };
 
-    _findEvent(index) {
-        return this._events.find((event) => event.interval === index);
-    };
+    runEvents();
+    this._running = true;
+    this._interval = setInterval(runEvents, 1000);
+  };
 
-    addAction(interval, callback) {
-        this._events.push({
-            interval: this._latestIndex+interval,
-            callback
-        });
-        this._latestIndex += interval;
-    };
+  stop() {
+    clearInterval(this._interval);
+    this._running = false;
+    this._index = 0;
+  };
 
-    start(startAt) {
-        if( this._running ) return;
-        if( startAt ) this._index = startAt;
-        
-        const runEvents = () => {
-            let event = this._findEvent(this._index);
-            if( event ) event.callback();
-            this._index++;
-        };
+  pause() {
+    clearInterval(this._interval);
+    this._running = false;
+  };
 
-        runEvents();
-        this._running = true;
-        this._interval = setInterval(runEvents, 1000);
-    };
+  resume() {
+    this.start();
+  };
 
-    stop() {
-        clearInterval(this._interval);
-        this._running = false;
-        this._index = 0;
-    };
+  isRunning() {
+    return this._running;
+  };
 
-    pause() {
-        clearInterval(this._interval);
-        this._running = false;
-    };
-
-    resume() {
-        this.start();
-    };
-
-    isRunning() {
-        return this._running;
-    };
-
-    getEvents() {
-        return this._events;
-    };
+  getEvents() {
+    return this._events;
+  };
 };
 
 module.exports = IntervalEvent;
