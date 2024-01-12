@@ -1,6 +1,6 @@
 {
   "name": "interval-events",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple way to execute events at specific time intervals",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,5 @@
     "url": "https://github.com/AxelWine/interval-events/issues"
   },
   "author": "Axel Wine Studios",
-  "license": "ISC"
+  "license": "MIT"
 }

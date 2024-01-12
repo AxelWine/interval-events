@@ -1,14 +1,14 @@
-# IntervalEvent
-**IntervalEvent** is an NPM module that provides a simple way to execute events at specific time intervals. It allows you to set up actions to be executed at predetermined moments and control the start, pause, resume, and stop of the event sequence.
+# IntervalEvents
+**IntervalEvents** is an NPM module that provides a simple way to execute events at specific time intervals. It allows you to set up actions to be executed at predetermined moments and control the start, pause, resume, and stop of the event sequence.
 
 ## Installation
-To use **IntervalEvent**, you need to install the module using npm:
+To use **IntervalEvents**, you need to install the module using npm:
 ```bash
-npm install interval-event
+npm install interval-events
 ```
 
 ## Usage
-First, import the **IntervalEvent** module into your project:
+First, import the **IntervalEvents** module into your project:
 ```js
 const IntervalEvent = require("interval-event");
 ```
@@ -80,7 +80,7 @@ console.log("Configured events:", events);
 ```
 
 ## Example
-Here's a complete example of how to use **IntervalEvent**:
+Here's a complete example of how to use **IntervalEvents**:
 
 ```js
 const IntervalEvent = require("interval-event");
