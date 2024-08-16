@@ -10,7 +10,7 @@ npm install interval-events
 ## Usage
 First, import the **IntervalEvents** module into your project:
 ```js
-const IntervalEvent = require("interval-event");
+const IntervalEvent = require("interval-events");
 ```
 
 Next, create an instance of **IntervalEvent**:
@@ -83,7 +83,7 @@ console.log("Configured events:", events);
 Here's a complete example of how to use **IntervalEvents**:
 
 ```js
-const IntervalEvent = require("interval-event");
+const IntervalEvent = require("interval-events");
 
 const event = new IntervalEvent();
 

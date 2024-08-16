@@ -1,4 +1,4 @@
-const IntervalEvent = require("../src/IntervalEvent");
+const IntervalEvent = require("../src/IntervalEvents/index.cjs");
 const event1 = new IntervalEvent();
 const event2 = new IntervalEvent();
 
